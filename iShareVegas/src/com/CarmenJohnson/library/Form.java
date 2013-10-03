@@ -1,0 +1,111 @@
+package com.CarmenJohnson.library;
+
+import android.content.Context;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
+public class Form {
+	
+	
+	public static Spinner fillSpinnerWithCurrency(Context context, Spinner sp)
+	{
+		ValueLabelPair[] currencies = new ValueLabelPair[]{
+				new ValueLabelPair("INR", "Indian Rupee"),
+				new ValueLabelPair("USD", "US Dollar"),
+				new ValueLabelPair("DZD", "Algerian Dinar"),
+				new ValueLabelPair("ARS", "Argentine Peso"),
+				new ValueLabelPair("AUD", "Australian Dollar"),
+				new ValueLabelPair("BHD", "Bahraini Dinar"),
+				new ValueLabelPair("BOB", "Bolivian Boliviano"),
+				new ValueLabelPair("BWP", "Botswanan Pula"),
+				new ValueLabelPair("BRL", "Brazilian Real"),
+				new ValueLabelPair("GBP", "British Pound Sterling"),
+				new ValueLabelPair("BND", "Brunei Dollar"),
+				new ValueLabelPair("BGN", "Bulgarian Lev"),
+				new ValueLabelPair("CAD", "Canadian Dollar"),
+				new ValueLabelPair("KYD", "Cayman Islands Dollar"),
+				new ValueLabelPair("XOF", "CFA Franc BCEAO"),
+				new ValueLabelPair("CLP", "Chilean Peso"),
+				new ValueLabelPair("CNY", "Chinese Yuan"),
+				new ValueLabelPair("COP", "Colombian Peso"),
+				new ValueLabelPair("CRC", "Costa Rican Colón"),
+				new ValueLabelPair("HRK", "Croatian Kuna"),
+				new ValueLabelPair("CZK", "Czech Republic Koruna"),
+				new ValueLabelPair("DKK", "Danish Krone"),
+				new ValueLabelPair("DOP", "Dominican Peso"),
+				new ValueLabelPair("EGP", "Egyptian Pound"),
+				new ValueLabelPair("EEK", "Estonian Kroon"),
+				new ValueLabelPair("EUR", "Euro"),
+				new ValueLabelPair("FJD", "Fijian Dollar"),
+				new ValueLabelPair("HNL", "Honduran Lempira"),
+				new ValueLabelPair("HKD", "Hong Kong Dollar"),
+				new ValueLabelPair("HUF", "Hungarian Forint"),
+				new ValueLabelPair("IDR", "Indonesian Rupiah"),
+				new ValueLabelPair("ILS", "Israeli New Sheqel"),
+				new ValueLabelPair("JMD", "Jamaican Dollar"),
+				new ValueLabelPair("JPY", "Japanese Yen"),
+				new ValueLabelPair("JOD", "Jordanian Dinar"),
+				new ValueLabelPair("KZT", "Kazakhstani Tenge"),
+				new ValueLabelPair("KES", "Kenyan Shilling"),
+				new ValueLabelPair("KWD", "Kuwaiti Dinar"),
+				new ValueLabelPair("LVL", "Latvian Lats"),
+				new ValueLabelPair("LBP", "Lebanese Pound"),
+				new ValueLabelPair("LTL", "Lithuanian Litas"),
+				new ValueLabelPair("MKD", "Macedonian Denar"),
+				new ValueLabelPair("MYR", "Malaysian Ringgit"),
+				new ValueLabelPair("MUR", "Mauritian Rupee"),
+				new ValueLabelPair("MXN", "Mexican Peso"),
+				new ValueLabelPair("MDL", "Moldovan Leu"),
+				new ValueLabelPair("MAD", "Moroccan Dirham"),
+				new ValueLabelPair("NAD", "Namibian Dollar"),
+				new ValueLabelPair("NPR", "Nepalese Rupee"),
+				new ValueLabelPair("ANG", "Netherlands Antillean Guilder"),
+				new ValueLabelPair("TWD", "New Taiwan Dollar"),
+				new ValueLabelPair("NZD", "New Zealand Dollar"),
+				new ValueLabelPair("NIO", "Nicaraguan Córdoba"),
+				new ValueLabelPair("NGN", "Nigerian Naira"),
+				new ValueLabelPair("NOK", "Norwegian Krone"),
+				new ValueLabelPair("OMR", "Omani Rial"),
+				new ValueLabelPair("PKR", "Pakistani Rupee"),
+				new ValueLabelPair("PGK", "Papua New Guinean Kina"),
+				new ValueLabelPair("PYG", "Paraguayan Guarani"),
+				new ValueLabelPair("PEN", "Peruvian Nuevo Sol"),
+				new ValueLabelPair("PHP", "Philippine Peso"),
+				new ValueLabelPair("PLN", "Polish Zloty"),
+				new ValueLabelPair("QAR", "Qatari Rial"),
+				new ValueLabelPair("RON", "Romanian Leu"),
+				new ValueLabelPair("RUB", "Russian Ruble"),
+				new ValueLabelPair("SVC", "Salvadoran Colón"),
+				new ValueLabelPair("SAR", "Saudi Riyal"),
+				new ValueLabelPair("RSD", "Serbian Dinar"),
+				new ValueLabelPair("SCR", "Seychellois Rupee"),
+				new ValueLabelPair("SLL", "Sierra Leonean Leone"),
+				new ValueLabelPair("SGD", "Singapore Dollar"),
+				new ValueLabelPair("SKK", "Slovak Koruna"),
+				new ValueLabelPair("ZAR", "South African Rand"),
+				new ValueLabelPair("KRW", "South Korean Won"),
+				new ValueLabelPair("LKR", "Sri Lankan Rupee"),
+				new ValueLabelPair("SEK", "Swedish Krona"),
+				new ValueLabelPair("CHF", "Swiss Franc"),
+				new ValueLabelPair("TZS", "Tanzanian Shilling"),
+				new ValueLabelPair("THB", "Thai Baht"),
+				new ValueLabelPair("TTD", "Trinidad and Tobago Dollar"),
+				new ValueLabelPair("TND", "Tunisian Dinar"),
+				new ValueLabelPair("TRY", "Turkish Lira"),
+				new ValueLabelPair("UGX", "Ugandan Shilling"),
+				new ValueLabelPair("UAH", "Ukrainian Hryvnia"),
+				new ValueLabelPair("AED", "United Arab Emirates Dirham"),
+				new ValueLabelPair("UYU", "Uruguayan Peso"),
+				new ValueLabelPair("UZS", "Uzbekistan Som"),
+				new ValueLabelPair("VEF", "Venezuelan Bolívar"),
+				new ValueLabelPair("VND", "Vietnamese Dong"),
+				new ValueLabelPair("YER", "Yemeni Rial"),
+				new ValueLabelPair("ZMK", "Zambian Kwacha (1968-2012)")
+		 };
+		ArrayAdapter<ValueLabelPair> ad = new ArrayAdapter<ValueLabelPair>(context, android.R.layout.simple_spinner_dropdown_item , currencies);
+		sp.setAdapter(ad);
+		return sp;
+	}
+	
+}
+
